@@ -1,9 +1,11 @@
 # Spring and React Demo
 This project code accompanies a blog found at 
 
-https://andrew-flower.com/blog/Spring-Boot-and-React-1
+https://andrew-flower.com/blog/Spring-Boot-and-React-2
 
-It is an example of configuring Gradle to build a React frontend application served by a Spring Boot backend.
+It is an example of setting up a data store and APIs backend with Spring Boot, and having a React 
+frontend interact with it.  Gradle manages the entire build process including invoking Webpack 
+using Node and bundling the JS application to be served by Spring Boot.
 
 ## Running the application
 Firstly, ensure that you have Java 12 installed and set to your `JAVA_HOME`. 

@@ -3,4 +3,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'spring-and-react'
+rootProject.name = 'spring-and-react-2'
