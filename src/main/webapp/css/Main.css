@@ -1,5 +1,10 @@
+html, body, #react-mountpoint {
+    height: 100%;
+}
+
 #main {
-    background: #eff;
+    background: #eff no-repeat center url(https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg);
     margin: 0 auto;
+    height: 100%;
     width: 800px;
 }
