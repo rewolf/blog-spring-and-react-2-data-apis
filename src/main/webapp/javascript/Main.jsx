@@ -12,6 +12,10 @@ class Main extends Component {
     }
 
     componentDidMount() {
+        this.fetchFriends();
+    }
+
+    fetchFriends() {
         fetch("/api/friends")
             .then(res => res.json())
             .then(
@@ -26,11 +30,32 @@ class Main extends Component {
             )
     }
 
+    handleSubmit(evt) {
+        evt.preventDefault();
+        fetch("/api/friends", {
+            method: "POST",
+            body: new FormData(evt.target)
+        }).then((response) => {
+                if (response.ok) {
+                    this.fetchFriends();
+                } else {
+                    alert("Failed to create friend");
+                }
+            }
+        );
+        evt.target.reset();
+        return false;
+    }
+
     render() {
         return (
             <div id="main">
                 <h1>My Best Friends</h1>
                 <FriendList friends={this.state.friends}/>
+                <form onSubmit={this.handleSubmit.bind(this)}>
+                    <input id="name" name="name" type="text" placeholder="Enter name"/>
+                    <button type='submit'>Create</button>
+                </form>
             </div>
         );
     }
