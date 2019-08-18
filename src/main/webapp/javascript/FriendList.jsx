@@ -8,7 +8,7 @@ class FriendList extends Component {
         return (
             <ul id="friend-list">
                 {this.props.friends.map(friend => (
-                    <li>
+                    <li key={friend.id}>
                         {friend.name}
                     </li>
                 ))}
