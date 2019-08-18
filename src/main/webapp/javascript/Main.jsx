@@ -42,7 +42,9 @@ class Main extends Component {
                     alert("Failed to create friend");
                 }
             }
-        );
+        ).catch((error) => {
+            alert(error);
+        });
         evt.target.reset();
         return false;
     }
