@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
 public class Friend {
     @Id
     @GeneratedValue
