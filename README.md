@@ -1,7 +1,4 @@
 # Spring and React Demo
-This project code accompanies a blog found at 
-
-https://andrew-flower.com/blog/Spring-Boot-and-React-2
 
 It is an example of setting up a data store and APIs backend with Spring Boot, and having a React 
 frontend interact with it.  Gradle manages the entire build process including invoking Webpack 
